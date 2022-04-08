@@ -8,8 +8,7 @@ export default function HomePage() {
   return (
     <main>
       <Menu />
-    {/* <button>----------------</button> */}
-      {/* <NewsletterSubscription /> */}
+      <NewsletterSubscription />
 
     </main>
   );
