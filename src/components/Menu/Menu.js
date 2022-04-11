@@ -1,13 +1,13 @@
-import './Menu.css';
+import {Header, NavBar} from './styles'
 import logo from './../../assets/images/logo.svg';  // this tells webpack to bundle this image together with all the JS files
 
 export default function Menu() {
     return (
-        <header className="menu">
-            <div className="top-logo">
-                <img src={logo} alt='main logo' />
+        <Header >
+            <div >
+                <img src={logo} alt='a leaft representing Casa Verde logo' />
             </div>
-            <nav>
+            <NavBar>
                 <li>
                     <a href="/">Como fazer</a>
                     /
@@ -27,7 +27,7 @@ export default function Menu() {
                 <li>
                     <a href="/">Meu carrinho</a>
                 </li>
-            </nav>
-        </header>
+            </NavBar>
+        </Header>
     );
 }
