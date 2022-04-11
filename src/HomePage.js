@@ -9,10 +9,10 @@ export default function HomePage() {
   return (
     <>
     <GlobalStyle />
-    <main>
-      <Menu />
-      <NewsletterSubscription />
-    </main>
+      <main>
+        <Menu />
+        <NewsletterSubscription />
+      </main>
     </>
   );
 }

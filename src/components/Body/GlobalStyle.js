@@ -1,20 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
 import { ResetCSS } from './ResetCSS';
+import bodyShapeImg from './../../assets/images/body-shape.svg';
+import backgroundImg from './../../assets/images/bg.jpg';
 
 export const GlobalStyle = createGlobalStyle`
     ${ResetCSS};
     
-    // * {
-    //     border: 2px solid red;
-    // }
-
     body {
-        font-family: 'Montserrat', sans-serif;    
+        font-family: 'Montserrat', sans-serif;
     }
     @media(min-width: 920px) {
         body {
-            // border: 5px solid red;
-            background-image: url('./../../assets/images/body-shape.svg'), url('./../../assets/images/bg.jpg');
+            // border: 2px solid red;
+            
+            background-image: url(${bodyShapeImg}), url(${backgroundImg});
+            
             background-repeat: no-repeat,  repeat-x;
             background-position: right top;
         }

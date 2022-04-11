@@ -1,9 +1,8 @@
 import {css} from 'styled-components';
 
 export const ResetCSS = css`
-    // * {border: 1px solid pink;}
-
     * {
+        // border: 2px solid red;
         box-sizing: border-box;
         margin: 0;
         padding: 0;
