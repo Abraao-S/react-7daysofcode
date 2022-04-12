@@ -82,7 +82,7 @@ export const StyledNewsletterSubscriptionContainer = styled.div`
     }
 `;
 
-export const NewsletterForm = styled.form`
+export const StyledNewsletterForm = styled.form`
     // border: 1px solid red;
 
     input[type="email"] {
@@ -92,7 +92,7 @@ export const NewsletterForm = styled.form`
     }    
 `;
 
-export const NewsletterFormFieldGroup = styled.form`
+export const StyledNewsletterFormFieldGroup = styled.form`
     // border: 1px solid red;
     display: flex;
     flex-direction: column;
