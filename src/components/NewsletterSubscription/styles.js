@@ -92,7 +92,7 @@ export const StyledNewsletterForm = styled.form`
     }    
 `;
 
-export const StyledNewsletterFormFieldGroup = styled.form`
+export const StyledNewsletterFormFieldGroup = styled.div`
     // border: 1px solid red;
     display: flex;
     flex-direction: column;
@@ -101,57 +101,65 @@ export const StyledNewsletterFormFieldGroup = styled.form`
         // border: 1px solid green;
         flex-direction: row;
     }
+`;
+    
+export const StyledNewsletterFormInput = styled.input`     
+    flex: 1;
+    // padding: 10px;
 
-    input {
-        // border: 1px solid red;
-        flex: 1;
-        // padding: 10px;
-        
-        font-family: Montserrat;
-        font-size: 16px;
-        font-style: normal;
-        font-weight:normal;
-        
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: left;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight:normal;
 
-        background-image: url(${mailIcon});
-        background-repeat: no-repeat;
-        background-position: 16px center;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
 
-        outline-color: ffcb47;
-        box-shadow: 10px 10px 30px 0px #0000000f;
+    background-image: url(${mailIcon});
+    background-repeat: no-repeat;
+    background-position: 16px center;
 
-        border: 0;
+    outline-color: ffcb47;
+    box-shadow: 10px 10px 30px 0px #0000000f;
+
+    border: 0;
+
+    &:hover {
+    box-shadow: 10px 10px 30px 0px #0000002e;
     }
+`;
 
-    input:hover {
-        box-shadow: 10px 10px 30px 0px #0000002e;
-    }
+export const StyledNewsletterSubscriptionButton = styled.button`
+    // border: 1px solid red !important;
 
-    button {
-        // border: 1px solid red;
-        background-color: #FFCB47;
+    font-size: 16px;
+    padding: 27px;
+    height: 75px;
+    width: 194px;
+    left: 751;
+    top: 597;
+    width: 100%;
+    border-radius: 0px;
+    border: 0;
+    // box-shadow: 10px 10px 30px 0px #ffcb474d;
 
-        font-size: 16px;
-        padding: 27px;
-        
-        height: 75px;
-        // width: 194px;
-        left: 751;
-        top: 597;
-        width: 100%;
+    color: #fff;
+    
+    // remember: opacity will be 0.5 when button is disabled
+    background-color: #FFCB47;
+    
+    // makes the button clickable or not according to state
+    pointer-events: ${ (props) => 
+        props.$enabled ? "auto" : "none" }
+    ;
 
-        border-radius: 0px;
-        color: #fff;
-        background-color: #ffcb47;
+    // changes opacity based on button state
+    opacity: ${ (props) =>
+        props.$enabled ? '1' : '0.5'
+    };
 
-        box-shadow: 10px 10px 30px 0px #ffcb474d;
-        border: 0;
-        
-        @media(min-width: 920px) {
-            width: initial;
-        }
+    @media(min-width: 920px) {
+    width: initial;
     }
 `;
